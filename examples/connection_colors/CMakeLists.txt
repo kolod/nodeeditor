@@ -1,5 +1,8 @@
-file(GLOB_RECURSE CPPS  ./*.cpp )
-
-add_executable(connection_colors ${CPPS})
-
-target_link_libraries(connection_colors nodes)
+nodeeditor_add_example(
+	EXENAME ConnectionColors
+	SOURCES
+		${CMAKE_CURRENT_LIST_DIR}/models.cpp
+		${CMAKE_CURRENT_LIST_DIR}/main.cpp
+	HEADERS
+		${CMAKE_CURRENT_LIST_DIR}/models.h
+)

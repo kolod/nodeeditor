@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"*.h.in": "cpp",
+		"*.cpp.in": "cpp",
+		"LICENSE": "plaintext"
+	},
+	"editor.formatOnSave": false
+}

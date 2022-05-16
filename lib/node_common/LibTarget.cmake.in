@@ -1,0 +1,14 @@
+# Package-config file for @libBasename@ library
+#   (part of NodeEditor, version @PROJECT_VERSION@)
+#
+# see: https://github.com/jkriege2/JKQtPlotter
+# Copyright: 2017-2022 (c) Dmitry Pinaev <dimitry.pinaev@gmail.com>
+#            2022-...  (c) Oleksandr Kolodkin <alexandr.kolodkin@gmail.com>
+#
+
+
+# package requires Qt@QT_VERSION_MAJOR@
+find_package(Qt@QT_VERSION_MAJOR@ COMPONENTS Core Gui Widgets OpenGL REQUIRED)
+
+# include auto-generated targets.cmake file
+include("${CMAKE_CURRENT_LIST_DIR}/@NODE_EDITOR_CURRENT_TARGET_FILENAME@")

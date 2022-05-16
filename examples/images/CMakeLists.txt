@@ -1,5 +1,11 @@
-file(GLOB_RECURSE CPPS  ./*.cpp )
-
-add_executable(images ${CPPS})
-
-target_link_libraries(images nodes)
+nodeeditor_add_example(
+	EXENAME Images
+	SOURCES
+		${CMAKE_CURRENT_LIST_DIR}/ImageShowModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/ImageLoaderModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/main.cpp
+	HEADERS
+		${CMAKE_CURRENT_LIST_DIR}/PixmapData.h
+		${CMAKE_CURRENT_LIST_DIR}/ImageLoaderModel.h
+		${CMAKE_CURRENT_LIST_DIR}/ImageShowModel.h
+)

@@ -1,0 +1,19 @@
+===============================================================================
+ NodeEditor is conceived as a general-purpose Qt-based library
+ aimed at graph-controlled data processing.
+     sub-library: @libBasename@
+===============================================================================
+
+Library Information:
+  version:                @PROJECT_VERSION@
+  original author:        Dmitry Pinaev <dimitry.pinaev@gmail.com>
+  fork author:            Oleksandr Kolodkin <alexandr.kolodkin@gmail.com>
+  copyright:              (c) 2017-2022 by Dmitry Pinaev
+                          (c) 2022-... by Oleksandr Kolodkin
+  license:                BSD 3-Clause "New" or "Revised" License
+  repository:             https://github.com/kolod/nodeeditor
+  documentation:          http://kolod.github.io/nodeeditor/index.html
+
+Build information:
+  used compiler:          @CMAKE_CXX_COMPILER_ID@ @CMAKE_CXX_COMPILER_VERSION@
+  used Qt version:        @QT_VERSION@

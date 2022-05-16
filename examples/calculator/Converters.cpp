@@ -1,9 +1,9 @@
-#include "Converters.hpp"
+#include "Converters.h"
 
 #include <QtGui/QDoubleValidator>
 
-#include "DecimalData.hpp"
-#include "IntegerData.hpp"
+#include "DecimalData.h"
+#include "IntegerData.h"
 
 
 std::shared_ptr<NodeData>

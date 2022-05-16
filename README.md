@@ -1,4 +1,4 @@
-### Purpose
+# Purpose
 
 **NodeEditor** is conceived as a general-purpose Qt-based library aimed at
 graph-controlled data processing.  Nodes represent algorithms with certain inputs
@@ -16,19 +16,19 @@ data and propagates is further.
 Each change in the source node is immediately propagated through all the
 connections updating  the whole graph.
 
-### Platforms
+## Platforms
 
 * OSX (Apple Clang - LLVM 3.6), Linux (x64, gcc-7.0, clang-7): [![Build Status](https://travis-ci.org/paceholder/nodeeditor.svg?branch=master)](https://travis-ci.org/paceholder/nodeeditor)
 * Windows (msvc2019/Qt5/Win32, msvc2019/Qt6/x64): [![Build status](https://ci.appveyor.com/api/projects/status/wxp47wv3uyyiujjw/branch/master?svg=true)](https://ci.appveyor.com/project/paceholder/nodeeditor/branch/master)
 
 
-### Dependencies
+## Dependencies
 
 * Qt >5.15
 * CMake 3.8
 * Catch2
 
-### Current state
+## Current state
 
 * Model-based nodes
 * Automatic data propagation
@@ -38,11 +38,11 @@ connections updating  the whole graph.
 * JSON-based interface styles
 * Saving scenes to JSON files
 
-### Building
+## Building
 
-#### Linux
+### Linux
 
-~~~
+~~~bash
 git clone git@github.com:paceholder/nodeeditor.git
 cd nodeeditor
 mkdir build
@@ -51,7 +51,7 @@ cmake ..
 make -j && make install
 ~~~
 
-#### Qt Creator
+### Qt Creator
 
 1. Open `CMakeLists.txt` as project.
 2. If you don't have the `Catch2` library installed, go to `Build Settings`, disable the checkbox `BUILD_TESTING`.
@@ -59,7 +59,7 @@ make -j && make install
 4. `Build -> Build All`
 5. Click the button `Run`
 
-### >>> Version 3 Roadmap <<<
+## >>> Version 3 Roadmap <<<
 
 1. Headless mode. [done]
    You can create, populate, modify the derivative of AbstractGraphModel
@@ -68,53 +68,52 @@ make -j && make install
    visualization and modification tool, without specialization on only
    data propagation.
 2. Build data propagation on top of the graph code [done].
-   - Fix old unit-tests. [in progress].
-   - Fix save/restore. [in progress].
-   - Fix CI scriptst on travis and appveyor. [not started].
+   * Fix old unit-tests. [in progress].
+   * Fix save/restore. [in progress].
+   * Fix CI scriptst on travis and appveyor. [not started].
 3. Backward compatibility with Qt5 [not started/help needed].
-3. Write improved documentation based on Sphynx platform [done].
-4. Extend set of examples [partially done].
-5. Undo Redo [not started].
-6. Python wrappring using PySide [HELP NEEDED].
-7. Implement grouping nodes [not started].
-8. GUI: fix scrolling for scene view window scrolling [need to check Qt6]
+4. Write improved documentation based on Sphynx platform [done].
+5. Extend set of examples [partially done].
+6. Undo Redo [not started].
+7. Python wrappring using PySide [HELP NEEDED].
+8. Implement grouping nodes [not started].
+9. GUI: fix scrolling for scene view window scrolling [need to check Qt6]
 
 Any suggestions are welcome.
 
-### Citing
+## Citing
 
-    Dmitry Pinaev et al, Qt Node Editor, (2017), GitHub repository, https://github.com/paceholder/nodeeditor
+  Dmitry Pinaev et al, Qt Node Editor, (2017), GitHub repository, https://github.com/paceholder/nodeeditor
 
 BibTeX
 
-    @misc{Pinaev2017,
-      author = {Dmitry Pinaev et al},
-      title = {Qt5 Node Editor},
-      year = {2017},
-      publisher = {GitHub},
-      journal = {GitHub repository},
-      howpublished = {\url{https://github.com/paceholder/nodeeditor}},
-      commit = {1d1757d09b03cea0e4921bc19659465fe6e65b9b}
-    }
+~~~txt
+@misc{Pinaev2017,
+  author = {Dmitry Pinaev et al},
+  title = {Qt5 Node Editor},
+  year = {2017},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/paceholder/nodeeditor}},
+  commit = {1d1757d09b03cea0e4921bc19659465fe6e65b9b}
+}
+~~~
 
-
-### Youtube video:
+## Youtube video
 
 [![Youtube demonstration](https://bitbucket.org/paceholder/nodeeditor/raw/master/pictures/vid1.png)](https://www.youtube.com/watch?v=pxMXjSvlOFw)
 
-### Now with styles
-
+## Now with styles
 
 [![Styles](https://bitbucket.org/paceholder/nodeeditor/raw/master/pictures/style_example.png)](https://www.youtube.com/watch?v=i_pB-Y0hCYQ)
 
-
-### Buy me a beer
+## Buy me a beer
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/DmitryPinaev)
 
-### Showcase
+## Showcase
 
-#### [Chigraph](https://github.com/chigraph/chigraph)
+### [Chigraph](https://github.com/chigraph/chigraph)
 
 Chigraph is a programming language for beginners that is unique in that it is an
 intuitive flow graph:
@@ -123,7 +122,7 @@ intuitive flow graph:
 
 It features easy bindings to C/C++, package management, and a cool interface.
 
-#### [Spkgen particle engine editor](https://github.com/fredakilla/spkgen)
+### [Spkgen particle engine editor](https://github.com/fredakilla/spkgen)
 
 ![spkgen screenshot](pictures/spkgen.png)
 

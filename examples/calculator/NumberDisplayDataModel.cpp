@@ -1,6 +1,6 @@
-#include "NumberDisplayDataModel.hpp"
+#include "NumberDisplayDataModel.h"
 
-#include "DecimalData.hpp"
+#include "DecimalData.h"
 
 NumberDisplayDataModel::
 NumberDisplayDataModel()

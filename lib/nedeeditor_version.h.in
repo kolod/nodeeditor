@@ -1,0 +1,9 @@
+#pragma once
+
+namespace NODE_EDITOR {
+
+	const char* PROJECT_LONGNAME = "@PROJECT_LONGNAME@";
+	const char* PROJECT_VERSION = "@PROJECT_VERSION@";
+	const char* PROJECT_BITNESS = "@PROJECT_BITNESS@";
+
+} // namespace NODE_EDITOR

@@ -1,5 +1,8 @@
-file(GLOB_RECURSE CPPS  ./*.cpp )
-
-add_executable(styles ${CPPS})
-
-target_link_libraries(styles nodes)
+nodeeditor_add_example(
+	EXENAME Styles
+	SOURCES
+		${CMAKE_CURRENT_LIST_DIR}/models.cpp
+		${CMAKE_CURRENT_LIST_DIR}/main.cpp
+	HEADERS
+		${CMAKE_CURRENT_LIST_DIR}/models.h
+)

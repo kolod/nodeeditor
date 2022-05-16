@@ -1,0 +1,3 @@
+if(NOT APPLE)
+	set(CMAKE_INSTALL_RPATH $ORIGIN)
+endif()

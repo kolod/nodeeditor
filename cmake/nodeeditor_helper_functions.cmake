@@ -1,0 +1,2 @@
+include(nodeeditor_print_variables_table)
+include(nodeeditor_add_example)

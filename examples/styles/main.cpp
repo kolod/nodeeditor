@@ -1,14 +1,14 @@
 #include <QtWidgets/QApplication>
 
-#include <nodes/NodeData>
-#include <nodes/FlowScene>
-#include <nodes/FlowView>
-#include <nodes/DataModelRegistry>
-#include <nodes/NodeStyle>
-#include <nodes/FlowViewStyle>
-#include <nodes/ConnectionStyle>
+#include <NodeData>
+#include <FlowScene>
+#include <FlowView>
+#include <DataModelRegistry>
+#include <NodeStyle>
+#include <FlowViewStyle>
+#include <ConnectionStyle>
 
-#include "models.hpp"
+#include "models.h"
 
 using QtNodes::DataModelRegistry;
 using QtNodes::FlowScene;

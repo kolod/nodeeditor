@@ -1,23 +1,23 @@
-#include <nodes/NodeData>
-#include <nodes/FlowScene>
-#include <nodes/FlowView>
-#include <nodes/ConnectionStyle>
-#include <nodes/TypeConverter>
+#include <NodeData>
+#include <FlowScene>
+#include <FlowView>
+#include <ConnectionStyle>
+#include <TypeConverter>
+#include <DataModelRegistry>
 
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QMenuBar>
 
-#include <nodes/DataModelRegistry>
 
-#include "NumberSourceDataModel.hpp"
-#include "NumberDisplayDataModel.hpp"
-#include "AdditionModel.hpp"
-#include "SubtractionModel.hpp"
-#include "MultiplicationModel.hpp"
-#include "DivisionModel.hpp"
-#include "ModuloModel.hpp"
-#include "Converters.hpp"
+#include "NumberSourceDataModel.h"
+#include "NumberDisplayDataModel.h"
+#include "AdditionModel.h"
+#include "SubtractionModel.h"
+#include "MultiplicationModel.h"
+#include "DivisionModel.h"
+#include "ModuloModel.h"
+#include "Converters.h"
 
 
 using QtNodes::DataModelRegistry;

@@ -1,5 +1,22 @@
-file(GLOB_RECURSE CPPS  ./*.cpp )
-
-add_executable(calculator ${CPPS})
-
-target_link_libraries(calculator nodes)
+nodeeditor_add_example(
+	EXENAME Calculator
+	SOURCES
+		${CMAKE_CURRENT_LIST_DIR}/MathOperationDataModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/ModuloModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/NumberDisplayDataModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/NumberSourceDataModel.cpp
+		${CMAKE_CURRENT_LIST_DIR}/Converters.cpp
+		${CMAKE_CURRENT_LIST_DIR}/main.cpp
+	HEADERS
+		${CMAKE_CURRENT_LIST_DIR}/MultiplicationModel.h
+		${CMAKE_CURRENT_LIST_DIR}/NumberDisplayDataModel.h
+		${CMAKE_CURRENT_LIST_DIR}/NumberSourceDataModel.h
+		${CMAKE_CURRENT_LIST_DIR}/SubtractionModel.h
+		${CMAKE_CURRENT_LIST_DIR}/AdditionModel.h
+		${CMAKE_CURRENT_LIST_DIR}/Converters.h
+		${CMAKE_CURRENT_LIST_DIR}/DecimalData.h
+		${CMAKE_CURRENT_LIST_DIR}/DivisionModel.h
+		${CMAKE_CURRENT_LIST_DIR}/IntegerData.h
+		${CMAKE_CURRENT_LIST_DIR}/MathOperationDataModel.h
+		${CMAKE_CURRENT_LIST_DIR}/ModuloModel.h
+)

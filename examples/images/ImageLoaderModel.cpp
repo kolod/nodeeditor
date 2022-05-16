@@ -1,4 +1,4 @@
-#include "ImageLoaderModel.hpp"
+#include "ImageLoaderModel.h"
 
 #include <QtCore/QEvent>
 #include <QtCore/QDir>

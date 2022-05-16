@@ -1,8 +1,8 @@
-#include "ModuloModel.hpp"
+#include "ModuloModel.h"
+#include "IntegerData.h"
 
 #include <QtGui/QDoubleValidator>
 
-#include "IntegerData.hpp"
 
 QJsonObject
 ModuloModel::

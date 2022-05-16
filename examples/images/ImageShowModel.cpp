@@ -1,13 +1,13 @@
-#include "ImageShowModel.hpp"
+#include "ImageShowModel.h"
 
 #include <QtCore/QEvent>
 #include <QtCore/QDir>
 
 #include <QtWidgets/QFileDialog>
 
-#include <nodes/DataModelRegistry>
+#include <DataModelRegistry>
 
-#include "PixmapData.hpp"
+#include "PixmapData.h"
 
 ImageShowModel::
 ImageShowModel()
